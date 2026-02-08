@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Study Planner & Focus Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+    <h1 class="hel">Study Planner & Focus Tracker</h1>
+    <div class="form-group">
+        <input id="subject" placeholder="Subject">
+        <input id="topic" placeholder="Topic">
+        <input id="time" type="number" placeholder="Time (min)">
+        <select id="priority">
+            <option>High</option>
+            <option>Medium</option>
+            <option>Low</option>
+        </select>
+    </div>
+    <button onclick="addTask()">Add Task</button>
+
+    <h2>Today's Tasks</h2>
+    <ul id="taskList"></ul>
+
+    <div class="timer-box">
+        <h2>Focus Timer</h2>
+        <div id="timer">00:00:00</div>
+        <div class="timer-buttons">
+            <button onclick="startTimer()">Start</button>
+            <button onclick="stopTimer()">Stop</button>
+            <button onclick="resetTimer()">Reset</button>
+        </div>
+    </div>
+</div>
+    <script src="scripts.js"></script>
+</body>
+</html>

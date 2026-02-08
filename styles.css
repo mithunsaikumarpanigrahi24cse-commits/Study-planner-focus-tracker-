@@ -1,0 +1,132 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hel{
+    font-family:Arial;
+    font-style: italic;
+    color:rgb(246, 150, 61);
+}
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ 
+.container {
+    background: #ffffff;
+    width: 90%;
+    max-width: 700px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+ 
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h2 {
+    margin: 20px 0 10px;
+    color: #444;
+}
+
+
+.form-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+input,
+select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #3357f6;
+}
+
+ 
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #82f43f;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #fc4fc2;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+ 
+ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+li {
+    background: #f5f6fa;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+li button {
+    margin-left: 6px;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+
+ 
+.timer-box {
+    text-align: center;
+    margin-top: 15px;
+    padding: 15px;
+    background: #f0f2ff;
+    border-radius: 8px;
+}
+
+#timer {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+}
+
+.timer-buttons button {
+    margin: 5px;
+}
+ 
+
+@media (max-width: 600px) {
+    .form-group {
+        grid-template-columns: 1fr;
+    }
+}
